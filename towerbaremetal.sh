@@ -1,3 +1,5 @@
+ln -s /usr/bin/python3 /usr/bin/python
+
 wget https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz
 
 tar -xvzf ansible-tower-setup-bundle-latest.tar.gz
