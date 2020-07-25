@@ -50,4 +50,6 @@ EOF
 
 ./setup_openshift.sh -e openshift_host=https://api.apps.ocp4.local:6443 -e openshift_project=tower371 -e openshift_user=marc -e openshift_password=marcz  -e admin_password=admin -e secret_key=mysecret -e pg_username=postgresuser -e pg_password=postgrespwd -e rabbitmq_password=rabbitpwd -e rabbitmq_erlang_cookie=rabbiterlangpwd -e openshift_skip_tls_verify=True
 
+oc delete -f https://raw.githubusercontent.com/marcredhat/tower/master/towerdeployment.yml
+
 oc apply -f https://raw.githubusercontent.com/marcredhat/tower/master/towerdeployment.yml
